@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "property-based-testing"
+version = "0.1.0"
+description = "Tech talk for property based testing"
+authors = ["Yogesh Sajanikar"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "property_based_testing"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+numpy = "^1.25.1"
+jupyterlab = "^4.0.2"
+pytest = "^7.4.0"
+hypothesis = "^6.81.1"
+ipytest = "^0.13.3"
+rise = "^5.7.1"
+mypy = "^1.4.1"
+nb-mypy = "^1.0.5"
+jupyter-contrib-nbextensions = "^0.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
